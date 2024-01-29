@@ -19,4 +19,3 @@ else
   echo "Error: '$archivo' no es un archivo válido."
   exit 1
 fi
-
