@@ -1,13 +1,15 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
+if [ $# == 0 ]
+then
   echo "Por favor, introduce el nombre del archivo como parámetro."
   exit 1
 fi
 
 archivo="$1"
 
-if [ -f "$archivo" ]; then
+if [ -f "$archivo" ] 
+then
   echo "Copiando el archivo a /tmp"
   cp "$archivo" /tmp
 
